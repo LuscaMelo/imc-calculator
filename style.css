@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #072227;
+}
+
+.content {
+    width: 800px;
+    display: flex;
+    background-color: #FFF;
+    height: 450px;
+}
+
+.title {
+    width: 100%;
+    background-color: #35858B;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title i {
+    font-size: 15rem;
+    margin-right: -80px;
+    overflow: hidden;
+    color: #438f94
+}
+
+.title h1 {
+    font-size: 6rem;
+    color:#FFF;
+    margin-bottom: -30px;
+}
+
+.title span {
+    color: #FFF;
+    font-size: 1.2rem;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #FFF;
+}
+
+.calculator span {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2f2a33;
+}
+
+.calculator input {
+    font-size: 2.2em;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #b3b3b3;
+    outline: none;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.calculator input::placeholder {
+    color: #e2e2e2;
+    font-weight: bold;
+}
+
+.calculator input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.calculator button {
+    width: 100%;
+    border: none;
+    margin-top: 25px;
+    background-color: #35858B;
+    color: #FFF;
+    padding: 10px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calculator button:hover {
+    background-color: #2e6a6e;
+    transition: 0.7s;
+}
+
+.result {
+    display: flex;
+    align-items: baseline;
+}
+
+.result h3 {
+    font-size: 2.1em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #2f2a33;
+}
+
+.result span {
+    font-size: 1em;
+    margin-left: 5px;
+    color: #363636;
+}
+
+.result p {
+    width: 100%;
+    color: rgb(255, 62, 62);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.2rem;
+}
+
+.result h4 {
+    margin-left: auto;
+    font-size: 1.1rem;
+}
+
+.result i {
+    margin-right: 10px;
+}
+
+.green {
+    color: #35858B;
+}
+
+.danger {
+    color: rgb(252, 62, 62);
+}
+
+@media screen and (max-width: 850px) {
+    body {
+        height: 65vh;
+    }
+
+    .content {
+        display: block;
+        width: 90%;
+    }
+
+    .title i {
+        margin: 0;
+        font-size: 10rem;
+        margin-left: 20px;
+    }
+
+    .result {
+        display: flex;
+        align-items: center;
+    }
+
+    .result span {
+        margin-top: 11px;
+    }
+
+    .result h4{
+        margin-left: 20px;
+        font-size: 1rem;
+        text-align: end;
+    }
+}
